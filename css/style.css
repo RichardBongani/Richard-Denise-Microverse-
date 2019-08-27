@@ -1,16 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 :root {
-  --primary-color: #0099e6;
-  --secondary-color: #4dc3ff;
+  --primary-color: #0976ac;
+  --secondary-color: #62bfee;
 }
 
 html,
 body {
   min-width: 320px;
   margin: 0;
-  padding: 5% 5% 2% 12%;
   background-color: var(--secondary-color);
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
 }
 
 .container {
@@ -20,6 +21,7 @@ body {
   max-width: 900px;
   padding: 10px;
   padding-top: 20px;
+  margin-bottom: 50px;
   background-color: aliceblue;
 }
 
@@ -62,10 +64,31 @@ li {
   height: 75px;
 }
 
-#submit {
+textarea {
   border-radius: 5px;
   border: solid 1px var(--primary-color);
-  padding: 5px 20px 5px 20px;
-  background-color: #00334d;
+  padding: 5px;
+  width: 75%;
+  margin-top: 20px;
+}
+
+#submit {
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  border: solid 1px var(--primary-color);
+  padding: 10px 30px 10px 30px;
+  background-color: var(--primary-color);
   color: white;
+  text-transform: uppercase;
+}
+
+#submit:hover {
+  color: black;
+  background-color: white;
+}
+
+span {
+  color: rgb(241, 72, 72);
 }
