@@ -11,17 +11,111 @@
     <h1 id="title"> Survey Form</h1>
     <p id="description">Let us know how we can improve your coding skills</p>
     <form action="" id="survey-form">
-        <label for="name" id="name-label">Name: 
-            <input type="text" id="name" placeholder="Enter name">
-        </label><br>
-        <label for="email" id="email-label">Name: 
-                <input type="email" id="email" placeholder="Enter email address" required>
-            </label> <br>
-            <label for="number" id="number-label">Name: 
-                    <input type="number" id="number" placeholder="Enter number" required>
-                </label><br>
 
-    </form>
+            <div class="row">
+                <div class="left-labels">
+                        <label for="name" id="name-label">Name: </label>
+                </div>
+                <div class="rightTab">
+                        <input type="text" id="name" placeholder="Enter name" required>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="left-labels">
+                            <label for="email" id="email-label">Email: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input type="email" id="email" placeholder="Enter email address" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="left-labels">
+                            <label for="number" id="number-label">Number: </label>
+                        </div>
+                        <div class="rightTab">
+                                <input type="number" id="number" min="1" max="125" placeholder="Enter number" required>
+                        </div>
+                </div>
+
+        <div class="row">
+            <div class="left-labels">
+                    <label>Choose your prefered language:</label>
+            </div>
+            <div class="rightTab">
+                <select id="dropdown" >
+                    <option >Langaunge Type </option>
+                    <option>JavaScript </option>
+                    <option>Python </option>
+                    <option>C#</option>
+                </select>
+            </div>
+        </div>
+
+
+
+    <div class="row">
+        <div class="left-labels">
+            <label>Rate your experience:</label><br>
+        </div>
+        <div class="rightTab">
+            <ul>
+                <li><input name= "name" value="1" type="radio"> Beginner</li>
+                <li><input name= "name" value="2" type="radio"> Intermediate</li>
+                <li><input name= "name" value="3" type="radio"> Expert</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left-labels">
+                <label>Tell us about your years:</label>
+        </div>
+        <div class="rightTab">
+            <select >
+                <option >Years of experience</option>
+                <option>Less than a Year</option>
+                <option>One to five Years </option>
+                <option>Five and above</option>
+            </select><br>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="left-labels">
+            <label>Topis I am interested in  learning:</label><br>
+        </div>
+
+        <div class="rightTab">
+            <ul>
+                <li><input name ="checkbox" type="checkbox" value=" 1">Algorithms</li>
+                <li><input name ="checkbox" type="checkbox" value=" 2">Data structures</li>
+                <li><input name ="checkbox" type="checkbox" value=" 3">Basic HTML</li>
+                <li><input name ="checkbox" type="checkbox" value=" 4">Basic CSS</li>
+                <li><input name ="checkbox" type="checkbox" value="5">Api domentation</li>
+                <li><input name ="checkbox" type="checkbox" value=" 6">Challenges</li>
+                <li><input name ="checkbox" type="checkbox" value=" 7">Interview prep</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left-labels">
+                <label for="">Any comments or suggestions?</label>
+        </div>
+        <div class="rightTab">
+            <textarea name="" id="comments" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+    <div class="submit-btn">
+        <button id="submit">Submit</button>
+    </div>
+
+</form>
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
