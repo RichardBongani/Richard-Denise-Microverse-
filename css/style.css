@@ -65,5 +65,7 @@ li {
 #submit {
   border-radius: 5px;
   border: solid 1px var(--primary-color);
-  padding: 5px;
+  padding: 5px 20px 5px 20px;
+  background-color: #00334d;
+  color: white;
 }
