@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />   
+ <title>Survey Form</title>
 </head>
 <body>
-
-    <h1 id="title"> Survey Form</h1>
+        <h1 id="title"> Survey Form</h1>
+<div class="container">
+  
     <p id="description">Let us know how we can improve your coding skills</p>
     <form action="" id="survey-form">
 
@@ -35,7 +37,7 @@
                             <label for="number" id="number-label">Number: </label>
                         </div>
                         <div class="rightTab">
-                                <input type="number" id="number" min="1" max="125" placeholder="Enter number" required>
+                                <input type="number" id="number" min="1" max="125"  placeholder="Enter number" required>
                         </div>
                 </div>
 
@@ -73,7 +75,7 @@
                 <label>Tell us about your years:</label>
         </div>
         <div class="rightTab">
-            <select >
+            <select  id="years">
                 <option >Years of experience</option>
                 <option>Less than a Year</option>
                 <option>One to five Years </option>
@@ -107,7 +109,7 @@
                 <label for="">Any comments or suggestions?</label>
         </div>
         <div class="rightTab">
-            <textarea name="" id="comments" cols="30" rows="10"></textarea>
+            <textarea name="" id="comments" cols="30" rows="10" placeholder="Please comment here"></textarea>
         </div>
     </div>
 
@@ -118,5 +120,6 @@
 </form>
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</div>
 </body>
 </html>
